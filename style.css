@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    margin: 0px;
+    width: 100%;
+}
+.container{
+    background-color: none;
+    height: 100vh;
+    width: 100%;
+    margin-top: 0px;
+ 
+
+}
+.navbar{
+    width: 100%;
+    height: 9vh;
+    background-color: rgb(229, 82, 178);
+    background-image: linear-gradient(to right, rgb(51, 105, 117), rgb(3, 18, 22)); 
+    display: flex;
+    justify-content: space-between;   
+    align-items: center; 
+    margin: 0px;
+    position: fixed;
+    
+}
+.profile-logo{
+    height: 9vh;
+    width: 4vw;
+    border-radius: 50%;
+    margin-left: 5px;
+
+}
+.link{
+    /* color: ; */
+    font-size: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #b7d9dd;
+}
+  .main-menu{
+   display: flex;
+   gap: 25px;
+   align-items: center;
+   list-style: none;
+}
+.downloadcvbtn{
+    border-radius: 10px;
+     color:white;
+   margin-right: 10px;
+   padding: 3px;
+   border-color: aqua;
+   padding: 10px 8px;
+   background-color: rgb(229, 82, 178);
+   background-image: linear-gradient(to left, rgb(31, 24, 28), rgb(7, 131, 165));
+}
+
+.downloadcvbtn:hover{
+    background-color: aqua;
+    columns: white;
+}
+ .hero {
+    background-image: url(https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+.hero-text {
+    text-align: center;
+} 
+.list{
+    background-color: white;
+    height: 2px;
+    width: 20px;
+    margin-right: 10px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.hamburger{
+    display:flex;
+    flex-direction:column;
+    cursor:pointer;
+    gap: 3px;
+    display: none;
+
+}
+.heading{
+    margin: 0px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+.text-span{
+    color: #9a031e;
+    font-size: 55px;
+}
+.intro{
+    font-size: 35px;
+}
+/* .hamburger-menu */
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    background-color: #1ef0d4;
+    width: 200px;
+    border-radius: 5px;
+    z-index: 10;
+}
+.hamburger-menu a {
+    color: white;
+}
+.hamburger-menu.active {
+    display: block;
+
+}
+
+.hamburger-menu .menu_items {
+    flex-direction: column;
+    padding: 10px;
+    list-style: none;
+}
+
+.hamburger-menu .menu_items li {
+    margin: 5px 0;
+    color: white;
+    padding-bottom: 8px;
+}
+.phone-button{
+    padding: 5px 10px;
+    background-color: rgb(15, 123, 224);
+    font-size: 16px;
+    border-radius: 8%;
+}
+    /* About me */
+.about{
+    width: 100%;
+    height: 40vh;
+    background-color: whitesmoke;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5px 0px;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50vh;
+    align-items: center;
+
+}
+.about-image{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 25vw;
+    justify-content: space-between;
+    margin: 5px 20px;
+}
+.about-image img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+ .about-image img{
+    height: 40vh;
+    width: 100%;
+    border-radius: 5%;
+    transition: 0.2s ease-in-out 0s; 
+ }
+.about-text{
+    flex: 1;
+    width: 100%;
+    font-size: 20px;
+}
+.about-me-text{
+    flex: 1;
+    text-align: center;
+    align-items: center;
+}
+/* portfolio section */
+.portfolio{
+    padding: 40px 20px;
+    background-color: #Fff;
+}
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.active{
+    color: rgb(233, 237, 236);
+    background-image: linear-gradient(to left, rgb(31, 24, 28), rgb(7, 131, 165));
+    padding: 8px 6px;
+    border-radius: 5px;
+    
+}
+.portfolio-categories{
+    margin-left: 5px;
+}
+.portfolio-categories button{
+    padding: 5px 10px;
+    height: 4vh;
+    background-color: #27aade;
+    transition: 0.2s ease-in-out 0s;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.portfolio-categories button:hover{
+    cursor: pointer;
+    transform: scale(0.7);
+}
+
+.portfolio-gallery{
+    width: 100%;
+    height: 50vh;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 10px;
+    
+}
+.portfolio-item{
+    margin: 10px;
+    text-align: center;
+    flex: 1 1 300px;
+}
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10%;
+    transition: 0.2s ease-in-out 0s;
+}
+.portfolio-item img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+/* contact-section */
+.contact-section{
+    background-color: rgb(188, 215, 215);
+    padding: 30px 20px;
+}
+.contact-text{
+    margin-left: 140px;
+    width: 20%;
+    text-align: center;
+}
+.contact-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.contact-info{
+    flex: 1;
+    padding-left: 145px;
+    padding-top: 10px;
+}
+.contact-info li{
+    list-style-type: none;
+}
+.icon{
+    padding-right: 8px;
+}
+.contact-info ul{
+  margin-left: 5px;
+  font-size: 20px;
+}
+.contact-form{
+ width: 100%;
+ flex: 1;
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+.form-group{
+    margin: 4px 10px;
+}
+.form-group input, .form-group textarea{
+    width: 100%;
+    padding: 5px;
+    border-radius: 2%;
+    border: 2px solid #ccc;
+}
+
+.contact-form button {
+    background-color: rgb(11, 48, 216);
+    color: white; 
+    border-color: none;
+    padding: 7px 0px;
+    margin-left: 12px;
+    border-radius: 5px;
+}
+.contact-form button:hover{
+    background-image: linear-gradient(to left, rgb(31, 24, 28), rgb(7, 131, 165));
+}
+/* Footer */
+footer{
+    background-color: rgb(14, 8, 8);
+    width: 100%;
+    height: 6vh;
+    color: aliceblue;
+    text-align: center; 
+    margin: 0px;
+}
+@media screen and (max-width: 500px) {
+      .hamburger{
+        display: block;
+      }  
+       .downloadcvbtn{
+        margin: 0;
+        display: none;
+      } 
+      
+       .main-menu li{
+        display: none;
+      } 
+      .about-image{
+        flex-direction: row;
+        height: 10vh;
+      }
+      .about-image img{
+        height: 25vh;
+        width: 100%;
+        text-align: center;
+      }
+       .portfolio-gallery img{
+        flex-direction: row;
+        width: 40vw;
+        height: 15vh;
+        margin: 5px;
+      } 
+      .contact-container{
+        flex-direction: column;
+      }
+      .contact-form{
+        flex-direction: column;
+      }
+       .heading{
+       font-size: 18px;
+      }
+      .intro{
+        font-size: 18px;
+      }
+      .text-span{
+        font-size: 20px;
+      }
+      .about{
+        flex-direction: column;
+    }
+    .portfolio-categories button{
+        margin: 3px;
+        padding: 2px;
+        gap: 2px;
+    }
+    .portfolio-item{
+        margin: 0;
+        flex: 1 1 300px;
+    }
+    .contact-section{
+       padding-top: 0px;
+    }
+    .portfolio{
+        padding: 55px 20px;
+    }
+    .contact-text{
+        font-size: 10px;
+        width: auto;
+    }
+    .contact-info{
+        align-items: center;
+        padding-left: 5px;
+    }
+    .navbar, .profile-logo{
+        height: 5vh;
+    }
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    <body>
+        <div class="container">
+            <!-- navigation bar -->
+                <div class="navbar">
+                    <img src="./public/image/photo.jpg" class="profile-logo">
+                    <ul class="main-menu">
+                        <li><a href="#" class="link">Home</a></li>
+                        <li><a href="#about" class="link">About</a></li>
+                        <li><a href="#portfolio" class="link">Portfolio</a></li>
+                        <li><a href="#contact" class="link">Contact</a></li>
+                        <button class="downloadcvbtn">DOWNLOAD CV</button>
+                        <div class="hamburger" onclick="toggleMenu()">
+                            <div class="list"></div>
+                            <div class="list"></div>
+                            <div class="list"></div>
+                        </div>
+                    </ul>
+                </div>
+                <!-- hamburgerMenu -->
+                 <div class="hamburger-menu" id="hamburgerMenu">
+                    <ul class="menu_items">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <button class="phone-button">+9779813520987</button>
+                    </ul>
+                 </div>
+                <!-- hero-section -->
+                <div class="hero">
+                    <div class="hero-text">
+                        <h1 class="heading">Front End Developer: <span class="text-span">Jogindar Yaday</span></h1>
+                        <h2 class="intro"><marquee direction="left">Explore my projects and get to know me!</marquee></h2>
+                    </div>
+                </div>
+            <!-- about section -->
+            <div class="about" id="about">
+                <div class="about-text">
+                    <h1 about-me-text>About me</h1>
+                    <p style="padding-left: 10px;">My name is Jogindar Yadav from Kotahimai rural municipality ward no -04. Now i studies <abbr title="Diploma in computer engineering">DCOM</abbr> at Rupandehi lilaram neupane secondary school siddharthanagar -08 Rupandehi. I have experience about programming language and web technology and also i have more interest to play game.</p>
+                </div>
+                <div class="image">
+                    <div class="about-image">
+                        <img src="./public/image/jy.jpg">
+                        <img src="https://images.pexels.com/photos/14000467/pexels-photo-14000467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    </div>
+                </div>
+            </div>
+        <!-- protfolio section -->
+            
+        <section class="portfolio" id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-categories">
+                <button onclick="filterPortfolio('web-design')" class="active">Web Design</button>
+                <button onclick="filterPortfolio('mobile-apps')">Mobile Apps</button>
+                <button onclick="filterPortfolio('graphic-design')">Graphic Design</button>
+            </div>
+            <div class="portfolio-gallery">
+                <div class="portfolio-item web-design">
+                    <img src="https://images.pexels.com/photos/160109/pexels-photo-160109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portfolio Item 1">
+                    <p>Web Design Project 1</p>
+                </div>
+                <div class="portfolio-item web-design">
+                    <img src="https://images.pexels.com/photos/17115910/pexels-photo-17115910/free-photo-of-layout-of-editing-software.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load">
+                    <p>Web Design Project 2</p>
+                </div>
+                <div class="portfolio-item web-design">
+                    <img src="https://images.pexels.com/photos/115655/pexels-photo-115655.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Portfolio Item 3">
+                    <p>Web Design Project 3</p>
+                </div>
+                <div class="portfolio-item graphic-design">
+                    <img src="https://img.freepik.com/premium-photo/abstract-eye-watercolor-splash-art-beautiful-graphic-design_31965-69800.jpg" alt="Portfolio Item 4">
+                    <p>Graphic Design Project 1</p>
+                </div>
+                <div class="portfolio-item graphic-design">
+                    <img src="https://images.pexels.com/photos/56759/pexels-photo-56759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portfolio Item 5">
+                    <p>Graphic Design Project 2</p>
+                </div>
+                <div class="portfolio-item graphic-design">
+                    <img src="https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <p>Graphic Design Project 3</p>
+                </div>
+                <div class="portfolio-item mobile-apps">
+                    <img src="https://images.pexels.com/photos/4549411/pexels-photo-4549411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portfolio Item 7">
+                    <p>Mobile App Project 1</p>
+                </div>
+                <div class="portfolio-item mobile-apps">
+                    <img src="https://images.pexels.com/photos/12935037/pexels-photo-12935037.png?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Portfolio Item 8">
+                    <p>Mobile App Project 2</p>
+                </div>
+                <div class="portfolio-item mobile-apps">
+                    <img src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portfolio Item 9">
+                    <p>Mobile App Project 3</p>
+                </div>
+            </div>
+        </section>
+        <!-- contact-section  -->
+            <section class="contact-section" id="contact"> 
+                <div class="contact-text"><h2>CONTACT ME</h2></div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                    <h3>Personal Information</h3>
+                    <ul>
+                        <li><i class="fa fa-map-marker icon" aria-hidden="true"></i>Kotahimai -04 Rupandehi</li>
+                        <li><i class="fa fa-envelope icon" aria-hidden="true"></i>codeaddict00@gmail.com</li>
+                        <li><i class="fa fa-phone-square icon" aria-hidden="true"></i>+977 9708863791</li>
+                    </ul>
+                </div> 
+                    <!-- contact-form input section -->
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                            <input type="text" name="name" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                            <input type="email" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                            <textarea id="your message" name="your messsage" placeholder="Your Message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div> 
+                </div>
+            </section> 
+            <!-- foooter section -->
+            <footer>
+                <p> &copy;2024 Portfolio. All right reserved.</p>
+            </footer>
+        </div>
+        <script>
+            function filterPortfolio(category) {
+                const items = document.querySelectorAll('.portfolio-item');
+                const buttons = document.querySelectorAll('.portfolio-categories button');
+
+                items.forEach(item => {
+                    if (item.classList.contains(category)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                buttons.forEach(button => {
+                    button.classList.remove('active');
+                });
+
+                document.querySelector(`[onclick="filterPortfolio('${category}')"]`).classList.add('active');
+            }
+
+            function toggleMenu() {
+                const hamburgerMenu = document.getElementById('hamburgerMenu');
+                hamburgerMenu.classList.toggle('active');
+            }
+
+
+            window.onload = function () {
+                filterPortfolio('web-design');
+            }
+        </script>
+    </body>
+</html>7
