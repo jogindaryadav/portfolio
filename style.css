@@ -303,7 +303,7 @@ body{
 .contact-form button:hover{
     background-image: linear-gradient(to left, rgb(31, 24, 28), rgb(7, 131, 165));
 }
-/* Footer */
+
 footer{
     background-color: rgb(14, 8, 8);
     width: 100%;
